@@ -8,8 +8,8 @@ $mail->Host='smtp.gmail.com';
 $mail->Port=587;
 $mail->SMTAuth=true;
 $mail->SMTPSecure='tls';
-$mail->Username='firstcoolname@gmail.com';
-$mail->Password='firstcoolname123';
+$mail->Username='onlyforgetting@gmail.com';
+$mail->Password='onlyforgetting123';
 
 $mail->setFrom($_POST['email'],$_POST['name']);
 $mail->addAddress('mohammadraway@gmail.com');
