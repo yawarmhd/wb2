@@ -1,3 +1,43 @@
+
+$result="";
+<?php
+if(isset($_POST['submit'])){
+require 'phpmailer/PHPMailerAutoload.php';
+$mail = new PHPMailer;
+$mail->Host='smtp.gmail.com';
+$mail->Port=587;
+$mail->SMTAuth=true;
+$mail->SMTPSecure='tls';
+$mail->Username='firstcoolname@gmail.com';
+$mail->Password='firstcoolname123';
+
+$mail->setFrom($_POST['email'],$_POST['name']);
+$mail->addAddress('mohammadraway@gmail.com');
+$mail->addReplyTo($_POST['email'],$_POST['name']);
+
+$mail->isHTML(true);
+$mail->Subject='Form Submission: '.$_POST['subject'];
+$mail->Body='<h1 align=center>Parent Name :'.$_POST['fname'].'<br>Email: '.$_POST['email'].'<br>Phone: '.$_POST[adr].'</h1>'
+'<h2 align=center>Student Name :'.$_POST['sname'].'<br>Gender: '.$_POST['select'].'<br>DOB: '.$_POST[dob].'<br>Grade: '.$_POST['grade'].'</h2>';
+
+if(!$mail->send()){
+$result="Something went wrong. Please try again. ";
+
+}
+else{
+$result="" Thanks ".$_POST['fname']." for contacting us. We'll get back to you soon!"
+}
+}
+?>
+
+
+
+
+
+
+
+
+
 <!doctype html>
 <!--[if IE 9]> <html class="no-js ie9 fixed-layout" lang="en"> <![endif]-->
 <!--[if gt IE 9]><!--> <html class="no-js " lang="en"> <!--<![endif]-->
@@ -275,6 +315,7 @@ input[type=text] {
 
 <div class="row">
   <div class="col-75">
+<h5 class="text-center text-success"><?= $result; ?></h5>
     <div class="container">
       <form id="form-control" action="form.php" method="post">
       
@@ -304,7 +345,7 @@ input[type=text] {
 
           <label for="gender"><i class="fa fa-user"></i> Gender </label>
 <br>
-<select class="form-control" required="" name="Select" background:#fff;">
+<select class="form-control" required="" name="select" background:#fff;">
                         <option value="">Gender</option>
                         <option value="Male">Male</option>
                         <option value="Female">Female</option>
@@ -367,8 +408,8 @@ input[type=text] {
           </div>
           
         </div>   </div>
-          
-        <input type="submit" value="Sumbit" class="btnn">
+          <input type="submit" name="submit" id="submit" class="btnn" value="Submit">
+   
 
       </form>
     </div>
@@ -556,7 +597,7 @@ input[type=text] {
                         <div class="course-box">
                             <div class="image-wrap entry">
   
-<img src="upload/course_02.jpg" alt="" class="img-responsive">
+<img src="upload/course_01.jpg" alt="" class="img-responsive">
                                 <div class="magnifier">
                                      
 <a href="#" title=""><i class="flaticon-add"></i></a>
@@ -594,7 +635,7 @@ input[type=text] {
                             <div class="image-wrap entry">
                                 
 
-<img src="upload/course_03.jpg" alt="" class="img-responsive">
+<img src="upload/course_01.jpg" alt="" class="img-responsive">
                                 <div class="magnifier">
                                      
 
@@ -624,7 +665,7 @@ input[type=text] {
                         <div class="course-box">
                             <div class="image-wrap entry">
                                 
-<img src="upload/course_04.jpg" alt="" class="img-responsive">
+<img src="upload/course_01.jpg" alt="" class="img-responsive">
                                 <div class="magnifier">
                                      
 <a href="#" title=""><i class="flaticon-add"></i></a>
@@ -768,7 +809,7 @@ input[type=text] {
                    <div class="col-lg-4 col-md-12">
                         <div class="blog-box">
                             <div class="image-wrap entry">
-                                <img src="upload/blog_02.jpeg" alt="" class="img-responsive">
+                                <img src="upload/blog_01.jpeg" alt="" class="img-responsive">
                                 <div class="magnifier">
                                      
 <a href="blog-single.html" title=""><i class="flaticon-add"></i></a>
@@ -786,7 +827,7 @@ input[type=text] {
 <div class="col-lg-4 col-md-12">
                         <div class="blog-box">
                             <div class="image-wrap entry">
-                                <img src="upload/blog_03.jpeg" alt="" class="img-responsive">
+                                <img src="upload/blog_01.jpeg" alt="" class="img-responsive">
                                 <div class="magnifier">
                                      
 <a href="blog-single.html" title=""><i class="flaticon-add"></i></a>
