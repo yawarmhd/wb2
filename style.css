@@ -87,7 +87,7 @@ SKELETON
 ******************************************/
 
 body {
-    background-color: #ffffff;
+    background-color: #f6f6f6;
     line-height: 1.6;
     font-size: 16px;
     color: #a2a2a2;
@@ -134,7 +134,7 @@ a {
     content: "\f00c";
     font-family: "FontAwesome";
     font-size: 16px;
-    eft: 0;
+    left: 0;
     padding-right: 10px;
     position: relative;
     top: 2px;
@@ -191,13 +191,9 @@ blockquote:before {
 }
 
 
-
-
 /******************************************
 HEADER
 ******************************************/
-
-
 
 .topbar {
     background-color: #000;
@@ -208,7 +204,7 @@ HEADER
 .topbar a,
 .topbar p {
     color: #fff;
-    font-size: 16px;
+    font-size: 14px;
     margin: 0;
 }
 
@@ -425,8 +421,6 @@ HEADER
 }
 
 
-
-
 /******************************************
 MEGA MENU
 ******************************************/
@@ -554,8 +548,6 @@ MEGA MENU
 }
 
 
-
-
 /******************************************
 PAGES
 ******************************************/
@@ -670,13 +662,9 @@ PAGES
 }
 
 
-
-
 /******************************************
 EVENTS
 ******************************************/
-
-
 
 .event-title.tagline-message h3 {
     font-size: 64px;
@@ -750,7 +738,7 @@ teammembers .magnifier {
     bottom: -50%;
     left: 0;
     right: 0;
-    padding: 50px 90px 40px;
+    padding: 50px 20px 40px;
     position: absolute;
     text-align: center;
 }
@@ -809,9 +797,6 @@ teammembers .magnifier {
     padding-bottom: 0;
     margin: 0;
 }
-
-
-
 
 
 /******************************************
@@ -930,9 +915,6 @@ CONTACT
     padding-bottom: 5px;
     text-transform: capitalize;
 }
-
-
-
 
 
 /******************************************
@@ -1178,9 +1160,6 @@ hr.invis {
 }
 
 
-
-
-
 /******************************************
 COURSE MODULES
 ******************************************/
@@ -1286,41 +1265,26 @@ COURSE MODULES
 }
 
 
-
-
 /************************************
 WIDGETS
 ************************************/
 
-
-
-.sidebar 
-
-.widget {
+.sidebar .widget {
     margin-bottom: 30px;
     padding-bottom: 30px;
     border-bottom: 1px solid #eaeaea;
 }
 
-
-
-
-.sidebar 
-.widget-title {
+.sidebar .widget-title {
     font-weight: 600;
     color: #000000;
 }
 
-
-
-.sidebar 
-.tags-widget li {
+.sidebar .tags-widget li {
     margin-bottom: 10px;
 }
 
-.sidebar .widget 
-
-.form-control {
+.sidebar .widget .form-control {
     margin-bottom: 10px;
     border-radius: 0;
     border-color: #eaeaea;
@@ -1329,24 +1293,16 @@ WIDGETS
     color: #b9b9b9;
 }
 
-
-
 .sidebar .newsletter-widget .form-control {
     min-width: 260px;
     margin-bottom: 0;
     height: 48px;
 }
 
-
-
-
 .sidebar .alignleft {
     float: left;
     margin-right: 20px;
 }
-
-
-
 
 .sidebar .mt-0 {
     font-size: 16px;
@@ -1354,9 +1310,6 @@ WIDGETS
     margin-bottom: 5px;
     margin-top: 0;
 }
-
-
-
 
 .sidebar .media {
     display: block;
@@ -1366,9 +1319,6 @@ WIDGETS
 .sidebar .media:last-child {
     margin-bottom: 0;
 }
-
-
-
 
 
 /************************************
@@ -1647,10 +1597,6 @@ BLOG
 }
 
 
-
-
-
-
 /******************************************
 TESTIMONIAL
 ******************************************/
@@ -1793,9 +1739,6 @@ TESTIMONIAL
 }
 
 
-
-
-
 /******************************************
 SHOP
 ******************************************/
@@ -1923,9 +1866,6 @@ SHOP
     font-size: 20px;
     padding-bottom: 10px;
 }
-
-
-
 
 
 /******************************************
@@ -2082,11 +2022,6 @@ FOOTER
 }
 
 
-
-
-
-
-
 /******************************************
 BUTTONS
 ******************************************/
@@ -2146,10 +2081,6 @@ MICS
     -o-border-radius: 50%;
     border-radius: 50%
 }
-
-
-
-
 
 
 /******************************************
@@ -2234,10 +2165,6 @@ mark,
 }
 
 
-
-
-
-
 /******************************************
 COLOR GREEN
 ******************************************/
@@ -2262,7 +2189,7 @@ COLOR GREEN
 }
 
 
-/******************************************
+/******************************************
 RESPONSIVE
 ******************************************/
 
