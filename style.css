@@ -2,6 +2,8 @@
 IMPORT
 ******************************************/
 
+
+
 @font-face {
     font-family: "Flaticon";
     src: url("fonts/Flaticon.eot");
@@ -80,6 +82,7 @@ IMPORT
 .flaticon-html-coding:before {
     content: "\f10d";
 }
+
 
 
 /******************************************
@@ -253,9 +256,9 @@ HEADER
     z-index: 111;
     left: 0;
     top: 0;
-    right: 0;
+    right:0;
     padding: 0;
-    background-color: rgba(0,0,0,0.5);
+    background-color: white;
     
 
 
@@ -287,7 +290,8 @@ text-decoration: none !important;
     position: fixed;
     top: 0;
     z-index: 100;
-    background-color: #000;
+    /*color of bar while scrolling*/
+background-color: #fff;
     left: 0;
     padding: 15px 0;
     right: 0,
@@ -310,8 +314,13 @@ text-decoration: none !important;
     border: 0;
 }
 
-.navbar-default .nav>li>a {
-    color: #fff !important;
+.navbar-default 
+
+
+
+/*for logo bar text color*/
+.nav>li>a {
+    color: #000 !important;
     text-transform: capitalize;
     font-size: 15px;
     font-weight: 500;
@@ -610,6 +619,9 @@ MEGA MENU
 PAGES
 ******************************************/
 
+
+
+
 .page-title h3 {
     margin-bottom: 10px !important;
 }
@@ -861,6 +873,9 @@ teammembers .magnifier {
 }
 
 
+
+
+
 /******************************************
 CONTACT
 ******************************************/
@@ -1095,8 +1110,14 @@ margin-bottom: 45px;
     background-color: #f6f6f6;
 
 }
+.section.mm {
+    background-color: rgba(247, 147, 30, 1);
+-webkit-text-fill-color: white
+}
 
-
+.section.hm {background-color:  rgba(238, 43, 123, 0.75);
+-webkit-text-fill-color: white
+};
 
 .section.rb {
     background-color: #f7941d;
@@ -1305,18 +1326,53 @@ height: 100%;
 float: left;
 }
 
-.container .slider .slide .caption
+.container .slider .slide .caption1
 {
 position: absolute;
 bottom: 280px;
 left: 60px;
 right: 60px;
 padding: 30px;
-background: rgba(0,0,0,0.5);
+background: rgba(41, 170, 226, 0.75);
 box-sizing: border-box;
 transition: 0.5s;
 }
 
+.container .slider .slide .caption2
+{
+position: absolute;
+bottom: 280px;
+left: 60px;
+right: 60px;
+padding: 30px;
+background: rgba(140, 198, 63, 0.75);
+box-sizing: border-box;
+transition: 0.5s;
+}
+
+.container .slider .slide .caption3
+{
+position: absolute;
+bottom: 280px;
+left: 60px;
+right: 60px;
+padding: 30px;
+background: rgba(247, 147, 30, 0.75);
+box-sizing: border-box;
+transition: 0.5s;
+}
+
+.container .slider .slide .caption4
+{
+position: absolute;
+bottom: 280px;
+left: 60px;
+right: 60px;
+padding: 30px;
+background: rgba(238, 43, 123, 0.75);
+box-sizing: border-box;
+transition: 0.5s;
+}
 
 
 .container .slider .slide.slide1
@@ -1325,6 +1381,7 @@ background: url(2.jpg);
 background-size: cover;
 background-position: center;
 -webkit-text-fill-color: white;
+
 }
 
 
@@ -1422,6 +1479,10 @@ hr.invis {
     border: 0;
     margin: 30px 0;
 }
+
+
+
+
 
 
 /******************************************
@@ -1859,6 +1920,9 @@ BLOG
 .blog-grid .col-md-4 {
     margin-bottom: 30px
 }
+
+
+
 
 
 /******************************************
@@ -2472,6 +2536,14 @@ COLOR GREEN
 
 
 
+
+
+
+
+
+
+
+
 /******************************************
 RESPONSIVE
 ******************************************/
@@ -2589,3 +2661,13 @@ RESPONSIVE
         padding: 1em 0.7em;
     }
 }
+
+
+
+
+
+
+
+
+
+
