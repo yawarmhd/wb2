@@ -87,7 +87,17 @@ SKELETON
 ******************************************/
 
 body {
-    background-color: #f6f6f6;
+   
+
+
+
+
+
+
+
+
+
+ background-color: #f6f6f6;
     line-height: 1.6;
     font-size: 16px;
     color: #a2a2a2;
@@ -100,8 +110,13 @@ a {
     font-family: 'Roboto', sans-serif;
 }
 
+
+
+
 .course-details h4 a,
 .readmore,
+
+
 .testimonial strong,
 h1,
 h2,
@@ -120,6 +135,8 @@ h5,
 h6 {
     line-height: 1.5;
 }
+
+
 
 .cop-logo img,
 a {
@@ -191,9 +208,24 @@ blockquote:before {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 /******************************************
 HEADER
 ******************************************/
+
+
+
 
 .topbar {
     background-color: #000;
@@ -419,6 +451,12 @@ HEADER
 .iconitem a {
     padding-left: 8px !important;
 }
+
+
+
+
+
+
 
 
 /******************************************
@@ -917,9 +955,16 @@ CONTACT
 }
 
 
+
+
+
+
+
 /******************************************
 SECTIONS
 ******************************************/
+
+
 
 .event-section {
     height: 100vh;
@@ -1001,13 +1046,25 @@ SECTIONS
     font-style: italic;
 }
 
+
+
+
+
 .section.gb {
     background-color: #f6f6f6;
+
 }
+
+
+
+
+
 
 .section.db {
     background-color: #000000;
 }
+
+
 
 .overlay {
     position: absolute;
@@ -1019,9 +1076,19 @@ SECTIONS
     background: url(images/pattern.png) repeat center center rgba(0, 0, 0, 0.7);
 }
 
+
+
+
+
 .video-section {
     position: relative;
 }
+
+
+
+
+
+
 
 .slider-bottom {
     position: absolute;
@@ -1037,11 +1104,20 @@ SECTIONS
     text-align: center;
 }
 
+
+
+
+
+
+
 .slider-bottom i {
     display: block;
     font-size: 14px;
     padding: 10px;
 }
+
+
+
 
 .home-text-wrapper {
     display: table;
@@ -1053,15 +1129,25 @@ SECTIONS
     z-index: 11;
 }
 
+
+
+
 .home-content {
     position: relative;
 }
+}
+
+
+
 
 .home-message {
     display: table-cell;
     height: 100%;
     vertical-align: middle;
 }
+
+
+
 
 .home-message p {
     font-size: 54px;
@@ -1130,6 +1216,122 @@ SECTIONS
 .image-box {
     position: relative;
 }
+
+}
+
+.container
+{
+position: relative;
+overflow: hidden;
+width: 100%;
+height: 100vh;
+}
+.container .slider
+{
+position: absolute;
+top: 0;
+left: 0;
+width: 500%;
+height: 100%;
+animation: animate 10s linear infinite;
+}
+
+.container .slider .slide
+{
+position: relative;
+width: 20%;
+height: 100%;
+float: left;
+}
+
+.container .slider .slide .caption
+{
+position: absolute;
+bottom: 60px;
+left: 60px;
+right: 60px;
+padding: 30px;
+background: rgba(0,0,0,0.5);
+box-sizing: border-box;
+transition: 0.5s;
+}
+
+
+
+.container .slider .slide.slide1
+{
+background: url(1.jpg);
+background-size: cover;
+background-position: center;
+}
+
+
+.container .slider .slide.slide2
+{
+background: url(2.jpg);
+background-size: cover;
+background-position: center;
+}
+
+
+.container .slider .slide.slide3
+{
+background: url(3.jpg);
+background-size: cover;
+background-position: center;
+}
+
+
+.container .slider .slide.slide4
+{
+background: url(4.jpg);
+background-size: cover;
+background-position: center;
+}
+
+
+@keyframes animate
+{
+	0%
+	{
+		left: 0;
+	}
+	20%
+	{
+		left: 0;
+	}
+	25%
+	{
+		left: -100%;
+	}
+	45%
+	{
+		left: -100%;
+	}
+	50%
+	{
+		left: -200%;
+	}
+	70%
+	{
+		left: -200%;
+	}
+	75%
+	{
+		left: -300%;
+	}
+	95%
+	{
+		left: -300%;
+	}
+	100%
+	{
+		left: -400%;
+	}
+
+}
+
+
 
 .image-box .overlay {
     background-image: none;
